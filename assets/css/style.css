@@ -1,0 +1,35 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-image: url("/assets/images/bg-footer.svg");
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-right: 20px;
+}
+
+.logo {
+  max-width: 120px;
+  max-height: 80px;
+}
+
+header ul li {
+  font-size: 0.9rem;
+}
+
+.card p {
+  text-align: justify;
+}
