@@ -2,34 +2,59 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-image: url("/assets/images/bg-footer.svg");
+  background-image: url("/assets/images/bg-header.jpg");
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+header {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 123, 255, 0.7),
+      rgba(102, 16, 242, 0.7)
+    ),
+    /* Gradient dengan transparansi */ url("/assets/images/bg-header.jpg")
+      no-repeat center center; /* Gambar latar belakang */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-size: cover; /* Agar gambar menutupi seluruh area */
+  height: 300px; /* Menambahkan tinggi untuk header agar gambar dapat terlihat */
 }
 
-.header ul {
-  display: flex;
-  list-style: none;
+header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
 }
-
-header ul li {
-  margin-right: 20px;
+footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.logo {
-  max-width: 120px;
-  max-height: 80px;
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  border-radius: 10px;
 }
-
-header ul li {
-  font-size: 0.9rem;
+.card:hover {
+  transform: translateY(-10px);
 }
-
-.card p {
+.data-diri {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card-text {
+  font-size: 1rem;
+  color: #495057;
   text-align: justify;
 }
